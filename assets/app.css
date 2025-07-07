@@ -1,6 +1,9 @@
 @import "tailwindcss";
+@import "./theme.css";
 @plugin "daisyui";
 
 body{
     font-family: 'Inter', sans-serif;
+    position: relative;
+    background-color: transparent;
 }

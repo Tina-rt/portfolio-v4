@@ -2,12 +2,13 @@
   <div class="main">
     <NuxtPage />
   </div>
+  <BackgroundAnim />
 </template>
 
 <script setup lang="ts">
 
 onMounted(() => {
-  document.getElementsByTagName('body')[0].setAttribute("data-theme", 'dark')
+  document.getElementsByTagName('body')[0].setAttribute("data-theme", 'mytheme')
 })
 </script>
 

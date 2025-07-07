@@ -1,0 +1,13 @@
+[data-theme="mytheme"] {
+    --color-primary: #210F37;
+    --color-primary-content: #fff;
+
+    --color-secondary: #4F1C51;
+    --color-secondary-content: white;
+
+    --color-base-200: rgb(33, 15, 55);
+
+
+    --color-accent: #DCA06D;
+    --color-accent-content: white;
+}
