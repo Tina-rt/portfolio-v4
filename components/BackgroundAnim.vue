@@ -15,7 +15,7 @@
   z-index: -1;
   width: 100%;
   height: 100%;
-  /* background-color: red; */
+  background-color: rgba(80, 80, 80, 0.947);
   /* border-radius: 99999px; */
   overflow: hidden;
 

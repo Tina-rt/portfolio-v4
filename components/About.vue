@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-base-200 p-4 rounded-2xl bg-about">
+  <div class=" p-4 rounded-2xl bg-about">
 
     <div class="flex flex-col gap-6 items-center pt-3">
       <div class="avatar">
@@ -54,7 +54,7 @@
 .bg-about {
   position: relative;
 
-  background: var(--color-primary);
+  /* background: var(--color-primary); */
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;

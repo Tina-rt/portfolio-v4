@@ -1,5 +1,6 @@
 <template>
-  <div class="flex gap-2 items-center bg-base-300  px-3 py-1 rounded-xl hover:bg-base-200 transition-all w-[300px]">
+  <div
+    class="flex gap-2 items-center bg-base-300  px-3 py-1 rounded-xl hover:bg-base-200 transition-all w-[250px] cursor-pointer">
     <div class="logo p-2 max-w-1/4">
       <img :src="props.iconPath" alt="Icon Nuxt" />
     </div>
