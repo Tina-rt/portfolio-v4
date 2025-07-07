@@ -7,7 +7,7 @@
         <h2 class="text-xs text-neutral-300 italic p-2 border-b-2 w-full  border-neutral-500">What I'm
           proefficient with </h2>
 
-        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 m-auto w-fit gap-2  p-2">
+        <div class="skill_container">
           <skills-tile :icon-path="skills.iconPath" :title="skills.title" :description="skills.description"
             v-for="skills in proefSkills"></skills-tile>
 
@@ -80,4 +80,17 @@ const proefSkills = ref<{
 
 </script>
 
-<style></style>
+<style scoped>
+.skill_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 2rem;
+}
+
+@media (max-width: 1000px) {
+  .skill_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
