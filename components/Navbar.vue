@@ -1,5 +1,5 @@
 <template>
-  <div class="flex w-full gap-4 justify-end p-4">
+  <div class="flex w-full gap-4 justify-center p-4">
     <a class="btn btn-ghost" href="#about">About</a>
     <a class="btn btn-ghost" href="#experience">Experience</a>
     <a class="btn btn-ghost" href="#projects">Projects</a>
