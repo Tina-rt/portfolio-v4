@@ -1,16 +1,19 @@
 <template>
   <div>
     <h1 class="text-2xl">Skills</h1>
-    <div class="flex  gap-1 flex-wrap p-2">
-      <skills-tile :icon-path="nuxtLogo" title="Nuxt"></skills-tile>
-      <skills-tile :icon-path="vuejslogo" title="Vue"></skills-tile>
-      <skills-tile :icon-path="typescriptlogo" title="Typescript"></skills-tile>
-      <skills-tile :icon-path="pythonlogo" title="Python"></skills-tile>
-      <skills-tile :icon-path="nodejslogo" title="Node Js"></skills-tile>
-      <skills-tile :icon-path="mysqllogo" title="MySQL"></skills-tile>
-      <skills-tile :icon-path="dockerlogo" title="Docker"></skills-tile>
-      <skills-tile :icon-path="capacitorlogo" title="Capacitor"></skills-tile>
+    <div class="my-2">
 
+      <div class="flex flex-col items-center justify-center w-full">
+        <h2 class="text-xs text-neutral-300 italic p-2 border-b-2 w-full  border-neutral-500">What I'm
+          proefficient with </h2>
+
+        <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 m-auto w-fit gap-2  p-2">
+          <skills-tile :icon-path="skills.iconPath" :title="skills.title" :description="skills.description"
+            v-for="skills in proefSkills"></skills-tile>
+
+
+        </div>
+      </div>
     </div>
 
   </div>
@@ -26,6 +29,54 @@ import nodejslogo from '~/assets/nodejslogo.png'
 import dockerlogo from '~/assets/dockerlogo.png'
 import mysqllogo from '~/assets/mysql logo.webp'
 import capacitorlogo from '~/assets/capacitorlogo.png'
+
+
+const proefSkills = ref<{
+  title: string;
+  iconPath: string;
+  description: string;
+}[]>([
+  {
+    title: "Nuxt",
+    iconPath: nuxtLogo,
+    description: "Vue Framework"
+  },
+  {
+    title: "Vue",
+    iconPath: vuejslogo,
+    description: "Javascript Library for dynamic app"
+  },
+  {
+    title: "Typescript",
+    iconPath: typescriptlogo,
+    description: "Like Javascript but better"
+  },
+  {
+    title: "Python",
+    iconPath: pythonlogo,
+    description: "For building efficient backend, automate things"
+  },
+  {
+    title: "NodeJS",
+    iconPath: nodejslogo,
+    description: "Fast Js runtime, backend logic"
+  },
+  {
+    title: "MySQL",
+    iconPath: mysqllogo,
+    description: "Powerful relational database"
+  },
+  {
+    title: "Docker",
+    iconPath: dockerlogo,
+    description: "Simplifies application deployement"
+  },
+  {
+    title: "Tailwindcss",
+    iconPath: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Tailwind_CSS_Logo.svg/2560px-Tailwind_CSS_Logo.svg.png",
+    description: "CSS utilities"
+  }
+])
 
 </script>
 

@@ -4,6 +4,13 @@
   </div>
 </template>
 
+<script setup lang="ts">
+
+onMounted(() => {
+  document.getElementsByTagName('body')[0].setAttribute("data-theme", 'dark')
+})
+</script>
+
 <style scoped>
 .main {
   width: 100%;
@@ -12,7 +19,7 @@
 
 @media (min-width: 1000px) {
   .main {
-    width: 600px;
+    width: 70vw;
     margin: auto;
     padding: 0;
   }

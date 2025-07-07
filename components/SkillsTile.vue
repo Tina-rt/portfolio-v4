@@ -1,10 +1,15 @@
 <template>
-  <div class="flex gap-2 items-center bg-base-300 w-fit px-3 py-2 rounded-xl">
-    <div class="logo">
-      <img width="30" :src="props.iconPath" alt="Icon Nuxt" />
+  <div class="flex gap-2 items-center bg-base-300  px-3 py-1 rounded-xl hover:bg-base-200 transition-all w-[300px]">
+    <div class="logo p-2 max-w-1/4">
+      <img :src="props.iconPath" alt="Icon Nuxt" />
     </div>
-    <div>
-      {{ props.title }}
+    <div class="flex flex-col gap-1">
+      <div>
+        {{ props.title }}
+      </div>
+      <div class="text-xs text-neutral-400">
+        <p>{{ props.description }} </p>
+      </div>
     </div>
   </div>
 </template>
@@ -14,6 +19,7 @@
 const props = defineProps<{
   iconPath: string;
   title: string;
+  description: string;
 }>()
 
 </script>
