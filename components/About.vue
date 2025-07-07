@@ -1,7 +1,7 @@
 <template>
   <div class="bg-base-200 p-4 rounded-2xl bg-about">
 
-    <div class="flex flex-col gap-6 items-center">
+    <div class="flex flex-col gap-6 items-center pt-3">
       <div class="avatar">
         <div class="w-30 rounded-full">
           <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
@@ -54,13 +54,12 @@
 .bg-about {
   position: relative;
 
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--color-primary);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   /* border: 1px solid rgba(255, 255, 255, 0.2); */
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
