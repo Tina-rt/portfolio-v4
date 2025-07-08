@@ -90,7 +90,7 @@ const proefSkills = ref<{
 
 @media (max-width: 1000px) {
   .skill_container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 10px;
   }
 }
