@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex gap-2 items-center bg-base-300  px-3 py-1 rounded-xl hover:bg-base-200 transition-all w-[250px] cursor-pointer min-h-[80px] tile">
+    class="flex gap-2 items-center bg-base-300  px-3 py-1 rounded-xl hover:bg-base-200 transition-all w-[250px] cursor-pointer  tile">
     <div class="logo p-2">
       <img :src="props.iconPath" alt="Icon Nuxt" />
     </div>
@@ -8,7 +8,7 @@
       <div>
         {{ props.title }}
       </div>
-      <div class="text-xs text-neutral-400">
+      <div class="text-xs text-neutral-400 hidden lg:block md:block">
         <p>{{ props.description }} </p>
       </div>
     </div>
@@ -34,20 +34,34 @@ const props = defineProps<{
 
 @media (max-width : 1000px) {
   .logo {
+    /* width: 100%; */
+    height: 50px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo img {
     width: 100%;
-    max-width: 100px;
+    height: 100%;
+    object-fit: contain;
   }
 
   .tile {
     display: flex;
     flex-direction: column;
-    /* width: fit-content; */
-    padding: 10px;
+    justify-content: space-between;
+    width: auto;
+    padding: 5px;
+    font-size: small;
+
   }
 
   .tile-container {
     justify-content: center;
     align-items: center;
+    text-align: center;
   }
 }
 </style>
