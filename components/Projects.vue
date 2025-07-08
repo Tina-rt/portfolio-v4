@@ -1,6 +1,6 @@
 <template>
   <div class="flex flex-col gap-3">
-    <h1 class="text-2xl mb-5">Projects</h1>
+    <h1 class="text-2xl mb-5">Personal projects</h1>
     <div class="flex flex-col gap-4 flex-wrap items-center">
       <project-card v-bind="p" v-for="p in projects" />
     </div>
