@@ -8,7 +8,7 @@ const props = defineProps<{
 
 
 <template>
-    <div class="w-full  py-4 border-t-2 mt-5">
+    <div class="w-full  py-4  mt-5">
         <div class="xp-card-content">
             <!-- <div class="logo">
                     <img src="https://cdn-ilaggjd.nitrocdn.com/dBDcRuwsDBEgWdyvdnRDxfbIbjTNEeWw/assets/images/optimized/rev-00b88c2/neoshore.eu/wp-content/uploads/2024/03/logo-white-neoshore.png"
@@ -17,7 +17,7 @@ const props = defineProps<{
             <div>
                 <div class="font-bold text-xl text-white">{{ props.experience.title }}</div>
                 <div class="italic text-sm text-accent">{{ props.experience.company }} | {{ props.experience.daterange
-                    }}</div>
+                }}</div>
                 <p class="py-2">
                     {{ props.experience.description }}
                 </p>

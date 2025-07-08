@@ -30,8 +30,10 @@ const experiences = ref<Experience[]>([
 <template>
     <div>
         <div class="text-2xl">Experiences</div>
+        <div class="flex flex-col lg;grid md:grid grid-cols-2 gap-4">
 
-        <ExperienceCard :experience="xp" v-for="xp in experiences" />
+            <ExperienceCard :experience="xp" v-for="xp in experiences" />
+        </div>
     </div>
 </template>
 
