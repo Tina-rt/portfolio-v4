@@ -13,6 +13,9 @@
     <div class="mt-4">
       <Projects />
     </div>
+    <div class="mt-4">
+      <Experience />
+    </div>
   </div>
 
 </template>
