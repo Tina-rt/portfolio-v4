@@ -4,7 +4,7 @@
     <div class="flex flex-col gap-6 items-center pt-3">
       <div class="avatar">
         <div class="w-30 rounded-full">
-          <img src="https://img.daisyui.com/images/profile/demo/yellingcat@192.webp" />
+          <img src="~/assets/Tina ratolojanahary photos.jpeg" alt="Tina Ratolojanahary" />
         </div>
       </div>
       <div class="flex flex-col items-center gap-1">
