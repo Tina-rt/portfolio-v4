@@ -3,6 +3,8 @@ export interface Project {
   description: string;
   coverImage: string;
   skills: string[];
+  sourceLink?: string;
+  demoLink?: string;
 }
 
 export interface Experience {

@@ -8,13 +8,17 @@
 </template>
 
 <script lang="ts" setup>
+import dailymgimg from '~/assets/Daily MG.webp'
 
 const projects = ref<Project[]>([
   {
     title: "Daily Mg",
     description: "Madagascar news daily, scraped from multiple journal",
-    coverImage: "https://cdn.dribbble.com/userupload/11224084/file/original-982ecfe80abe3ddf3cf0db4e16bfee94.png?resize=1024x768&vertical=center",
-    skills: ["nuxt", "vue", "python", "flask"]
+    coverImage: dailymgimg,
+    skills: ["nuxt", "vue", "python", "flask", "mongodb"],
+    sourceLink: 'https://github.com/Tina-rt/daily-mg',
+    demoLink: 'https://daily-mg.netlify.app/'
+
   },
   {
     title: "Kairot",

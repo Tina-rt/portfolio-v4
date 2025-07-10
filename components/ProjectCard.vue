@@ -11,13 +11,13 @@
           <div class="badge badge-soft" v-for="b in props.skills">{{ b }}</div>
         </div>
         <div class="card-actions py-3">
-          <button class="btn btn-secondary btn-sm">
+          <a target="_blank" :href="props.demoLink" class="btn btn-secondary btn-sm">
             <icon name="material-symbols:open-in-new" /> Preview
-          </button>
-          <button class="btn btn-secondary btn-sm">
+          </a>
+          <a target="_blank" :href="props.sourceLink" class="btn btn-secondary btn-sm">
             <icon name="material-symbols:code-rounded" />
             Code
-          </button>
+          </a>
         </div>
       </div>
       <div class="image-container">
@@ -34,6 +34,8 @@ const props = defineProps<{
   description: string;
   coverImage: string;
   skills?: string[];
+  sourceLink?: string;
+  demoLink?: string;
 }>();
 
 </script>
