@@ -16,6 +16,9 @@
     <div class="mt-4">
       <Experience />
     </div>
+    <div class="mt-4">
+      <Footer />
+    </div>
   </div>
 
 </template>
