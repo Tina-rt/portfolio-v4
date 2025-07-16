@@ -6,4 +6,9 @@ body{
     font-family: 'Inter', sans-serif;
     position: relative;
     background-color: rgba(0, 0, 0, 0.29);
+    position: relative;
+}
+html, body{
+    scroll-behavior: smooth;
+
 }

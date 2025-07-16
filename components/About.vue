@@ -1,5 +1,5 @@
 <template>
-  <div class=" p-4 rounded-2xl bg-about">
+  <div id="about" class=" p-4 rounded-2xl bg-about">
 
     <div class="flex flex-col gap-6 items-center pt-3">
       <div class="avatar">
