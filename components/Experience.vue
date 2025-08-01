@@ -5,7 +5,7 @@ const experiences = ref<Experience[]>([
         title: "Frontend Vuejs Developer",
         company: "Neoshore Madagascar",
         daterange: "December 2023 - Present",
-        description: "Maintain the existing Vue2 application, fixing and adding features. Creating and maintaining the new Vue3 application with Typescript, plementing figma design to functional application, making graphql api calls to the backend using apollo.",
+        description: "Maintain the existing Vue2 application, fixing and adding features. Creating and maintaining the new Vue3 application with Typescript, implementing figma design to functional application, making graphql api calls to the backend using apollo.",
         skils: ['vue2', 'Vue3', 'Typescript', 'apollo-graphql', 'primevue4']
     },
     {
@@ -30,9 +30,34 @@ const experiences = ref<Experience[]>([
 <template>
     <div id="experience">
         <div class="text-2xl">Experiences</div>
-        <div class="flex flex-col lg;grid md:grid grid-cols-2 gap-4">
+        <ul class="timeline timeline-vertical pt-5 hidden lg:block md:block">
 
-            <ExperienceCard :experience="xp" v-for="xp in experiences" />
+            <li v-for="(xp, index) in experiences">
+                <span class="text-accent italic"
+                    :class="{ 'timeline-start': index % 2 == 1, 'timeline-end': index % 2 == 0 }">
+                    {{ xp.daterange }}
+                </span>
+                <div class="timeline-middle">
+                    <Icon name="material-symbols:check-circle" size="24" />
+                </div>
+                <hr />
+                <div class=" timeline-box"
+                    :class="{ 'timeline-start': index % 2 == 0, 'timeline-end': index % 2 == 1 }">
+                    <experience-card :experience="xp" />
+                </div>
+                <hr />
+            </li>
+
+        </ul>
+        <div class="lg:hidden md:hidden  flex flex-col gap-4 pt-5">
+            <template v-for="(xp, index) in experiences">
+                <div v-if="index % 2 != 0" class="hidden lg:block md:block border-r-2"></div>
+                <div class="timeline-box">
+                    <ExperienceCard :experience="xp" />
+                </div>
+                <div v-if="index % 2 == 0" class="hidden lg:block md:block border-l-2"></div>
+
+            </template>
         </div>
     </div>
 </template>

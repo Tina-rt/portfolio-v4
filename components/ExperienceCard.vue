@@ -4,11 +4,13 @@ const props = defineProps<{
     experience: Experience
 }>();
 
+const show_details = ref(false);
+
 </script>
 
 
 <template>
-    <div class="w-full  py-4  mt-5">
+    <div class="w-full  py-4 ">
         <div class="xp-card-content">
             <!-- <div class="logo">
                     <img src="https://cdn-ilaggjd.nitrocdn.com/dBDcRuwsDBEgWdyvdnRDxfbIbjTNEeWw/assets/images/optimized/rev-00b88c2/neoshore.eu/wp-content/uploads/2024/03/logo-white-neoshore.png"
@@ -16,13 +18,14 @@ const props = defineProps<{
                 </div> -->
             <div>
                 <div class="font-bold text-xl text-white">{{ props.experience.title }}</div>
-                <div class="italic text-sm text-accent">{{ props.experience.company }} | {{ props.experience.daterange
-                }}</div>
+                <div class="italic text-sm text-accent">{{ props.experience.company }}<span
+                        class="block lg:hidden md:hidden xl:hidden"> | {{ props.experience.daterange
+                        }}</span></div>
                 <p class="py-2">
                     {{ props.experience.description }}
                 </p>
                 <p class="flex gap-2 flex-wrap mt-3">
-                    <span class="badge badge-info" v-for="sk in props.experience.skils">
+                    <span class="badge badge-info badge-sm" v-for="sk in props.experience.skils">
                         {{ sk }}
                     </span>
                 </p>

@@ -1,6 +1,6 @@
 <template>
   <Navbar />
-  <div class="flex flex-col gap-10 p-2">
+  <div class="flex flex-col gap-10 p-2 px-7">
 
 
     <div class="mt-5">

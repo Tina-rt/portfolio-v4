@@ -1,7 +1,7 @@
 <template>
-  <div class="card bg-base-200 w-full shadow-sm max-h-[30rem] md:max-h-[15rem] lg:max-h-[15rem] max-w-[50rem] ">
+  <div class="card bg-base-200 w-[20rem] shadow-sm max-h-[30rem] ">
 
-    <div class="card-body flex flex-col-reverse items-center justify-between max-h-full md:flex-row lg:flex-row">
+    <div class="card-body flex flex-col-reverse items-center justify-between max-h-full">
       <div class="h-full flex flex-col justify-between">
         <h2 class="card-title">{{ props.title }}</h2>
         <p class="my-3">{{ props.description }}</p>
@@ -42,14 +42,16 @@ const props = defineProps<{
 
 <style scoped>
 .image-container {
-  width: 20rem;
+  width: 100%;
   height: 10rem;
+  border-radius: 20px;
 }
 
 
 img {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
   object-fit: cover;
 }
 </style>
