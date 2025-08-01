@@ -29,7 +29,7 @@ const experiences = ref<Experience[]>([
 
 <template>
     <div id="experience">
-        <div class="text-2xl">Experiences</div>
+        <div class="text-2xl text-center py-4">Experiences</div>
         <ul class="timeline timeline-vertical pt-5 hidden lg:block md:block">
 
             <li v-for="(xp, index) in experiences">

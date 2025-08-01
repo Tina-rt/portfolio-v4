@@ -1,7 +1,7 @@
 <template>
-  <div id="projects" class="flex flex-col gap-3">
-    <h1 class="text-2xl mb-5">Personal projects</h1>
-    <div class="flex gap-4 flex-wrap items-center">
+  <div id="projects" class="flex flex-col gap-3 py-[4rem]">
+    <h2 class="text-2xl mb-5 text-center">Personal projects</h2>
+    <div class="flex gap-4 flex-wrap items-center justify-center">
       <project-card v-bind="p" v-for="p in projects" />
     </div>
   </div>

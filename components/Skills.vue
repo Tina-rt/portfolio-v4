@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <h1 class="text-2xl">Skills</h1>
+  <div class="p-[4rem]">
+    <h1 class="text-2xl text-center">Skills</h1>
     <div class="my-2">
 
       <div class="flex flex-col items-center justify-center w-full">
-        <h2 class="text-xs text-neutral-300 italic p-2 border-b-2 w-full  border-neutral-500">What I'm
-          proefficient with </h2>
+        <!-- <h2 class="text-xs text-neutral-300 italic p-2 border-b-2 w-full  border-neutral-500">What I'm
+          proefficient with </h2> -->
 
         <div class="skill_container">
           <skills-tile :icon-path="skills.iconPath" :title="skills.title" :description="skills.description"

@@ -9,7 +9,7 @@
     <div class="mt-4">
       <Skills />
     </div>
-    <div class="mt-4">
+    <div class="mt-5">
       <Projects />
     </div>
     <div class="mt-4">
