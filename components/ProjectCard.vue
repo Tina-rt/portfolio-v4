@@ -1,5 +1,5 @@
 <template>
-  <div class="card bg-base-200 w-[20rem] shadow-sm max-h-[30rem] ">
+  <div class="card bg-base-200 w-auto shadow-sm max-h-[50rem] ">
 
     <div class="card-body flex flex-col-reverse items-center justify-between max-h-full">
       <div class="h-full flex flex-col justify-between">
@@ -44,14 +44,15 @@ const props = defineProps<{
 .image-container {
   width: 100%;
   height: 10rem;
-  border-radius: 20px;
+  min-height: 10rem;
+  border-radius: 10px;
 }
 
 
 img {
   width: 100%;
   height: 100%;
-  border-radius: 20px;
+  border-radius: 10px;
   object-fit: cover;
 }
 </style>
