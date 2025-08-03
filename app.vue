@@ -3,6 +3,8 @@
     <NuxtPage />
   </div>
   <BackgroundAnim />
+  <AnimationCursor />
+
 </template>
 
 <script setup lang="ts">
