@@ -10,6 +10,7 @@
 <script lang="ts" setup>
 import dailymgimg from '~/assets/Daily MG.webp'
 import kairotimg from '~/assets/kairot.png'
+import breakupbotimg from '~/assets/breakupbot.png'
 
 const projects = ref<Project[]>([
   {
@@ -36,6 +37,14 @@ const projects = ref<Project[]>([
     skills: ['Javascript', 'chrome extension', 'HTML', 'CSS'],
     sourceLink: "https://github.com/Tina-rt/rltime-currency-converter",
     demoLink: "https://microsoftedge.microsoft.com/addons/detail/ariaryconverter/emaokcplamnpbefkneaociamopkfjmol"
+  },
+  {
+    title: "BreakupBot",
+    description: "Generate hilariously absurd and creative breakup excuses that are so ridiculous, they might just work! Just for laughs. ",
+    coverImage: breakupbotimg,
+    skills: ['Next', 'React', 'radix', 'tailwind'],
+    sourceLink: "https://github.com/Tina-rt/breakup-bot",
+    demoLink: "https://breakup-bot.netlify.app/generator"
   }
 ])
 
